@@ -1,3 +1,5 @@
+![Logo](Images/F498E0E6-CF5C-4971-8338-FA385F59BA8C.png "Logo")
+
 # Home Assistant Setup
 
 If you don't know how to setup an ESP device in Home Assistant, you're in the right place.   I won't go into how to setup ESPBuilder (there are plenty of other guides for this, but once that is available, here is how to setup SaltOwl
