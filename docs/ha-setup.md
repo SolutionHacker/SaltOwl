@@ -1,4 +1,4 @@
-![Logo](Images/F498E0E6-CF5C-4971-8338-FA385F59BA8C.png "Logo")
+![Logo](images/F498E0E6-CF5C-4971-8338-FA385F59BA8C.png "Logo")
 
 # Home Assistant Setup
 
@@ -25,7 +25,7 @@ Before you begin, make sure you have:
    This tool allows you to compile and flash ESPHome firmware directly from the browser — no additional software needed.
    WIth ESPHome Builder selected, you should be presented with a screen _like_ this
 
-![Adding a new ESP Device](Images/ESP-Home-1.png "Adding a new ESP Device")
+![Adding a new ESP Device](images/ESP-Home-1.png "Adding a new ESP Device")
 
 
 
@@ -33,10 +33,10 @@ Before you begin, make sure you have:
 ### 2. Setup basic configuration
 Once you add a new ESP degvice, you will be presented with the following screens.  
 
-![Adding a new ESP Device](Images/ESP-Home-2.png "Adding a new ESP Device") | 
-![Create Base Configuration](Images/ESP-Home-3a.png "Create Base Configuration") |
-![Create Base Configuration](Images/ESP-Home-4.png "Create Base Configuration") |
-![Configuration Created](Images/ESP-Home-5.png "Configuration Created")
+![Adding a new ESP Device](images/ESP-Home-2.png "Adding a new ESP Device") | 
+![Create Base Configuration](images/ESP-Home-3a.png "Create Base Configuration") |
+![Create Base Configuration](images/ESP-Home-4.png "Create Base Configuration") |
+![Configuration Created](images/ESP-Home-5.png "Configuration Created")
 
 Here you will have an opportunity to copy your encryption key.   While essential to keep private, there is no need to write this down, as you will have access to it later.
 
@@ -48,9 +48,9 @@ Here you will have an opportunity to copy your encryption key.   While essential
 > [!Note]
 Your browser may ask for permission to access the USB device — allow it.
 
-![Connecting to an ESP device](Images/ESP-Home-6.png "Connecting to an ESP Device")
+![Connecting to an ESP device](images/ESP-Home-6.png "Connecting to an ESP Device")
 
-![Download and Install Firmware to an ES{ device](Images/ESP-Home-7.png "Download and Install Firmware to an ES{ device")
+![Download and Install Firmware to an ES{ device](images/ESP-Home-7.png "Download and Install Firmware to an ES{ device")
 
 
 ### 4. Select Your Device
@@ -63,8 +63,8 @@ You may need to install a serial driver to find the relevant serial port and the
 
 When complete, download the project and click Open ESPHome Web
 
-![Connect to ESPHome Web](Images/ESP-Home-8.png "Connect to ESPHOme Web") |
-![Select the Serial Port Connection](Images/ESP-Home-9.png "Select the Serial Port Connection")
+![Connect to ESPHome Web](images/ESP-Home-8.png "Connect to ESPHOme Web") |
+![Select the Serial Port Connection](images/ESP-Home-9.png "Select the Serial Port Connection")
 
 
 ### 5. Install ESPHome Firmware
@@ -75,11 +75,11 @@ When complete, download the project and click Open ESPHome Web
 > [!Note]
 This process may take a few minutes. Wait for the confirmation message once complete.
 
-![Install Project File](Images/ESP-Home-10.png "Install Project File") |
-![Install Project File](Images/ESP-Home-11a.png "Install Project File")
+![Install Project File](images/ESP-Home-10.png "Install Project File") |
+![Install Project File](images/ESP-Home-11a.png "Install Project File")
 
-![Install Project File](Images/ESP-Home-13.png "Install Project File") |
-![Congratulations](Images/ESP-Home-14.png "Congratulations")
+![Install Project File](images/ESP-Home-13.png "Install Project File") |
+![Congratulations](images/ESP-Home-14.png "Congratulations")
 
 
 
@@ -98,7 +98,7 @@ Click Next or Install once details are entered.
    Now you’ll upload the custom SaltOwl ESPHome configuration (YAML).
    Remember to edit it and add your own Wifi Settings and IP Addresses in!
    
-![SaltOwl Code ](Images/ESP-Home-15.png "SaltOwl Code")
+![SaltOwl Code ](images/ESP-Home-15.png "SaltOwl Code")
 
 
 Click Install and wait for the flashing to complete.
