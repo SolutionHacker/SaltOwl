@@ -49,7 +49,8 @@ If all goes well, this is the final build should look...
 ![Final Build](../images/Final-Build.png "Final Build")
 
 
-> [!NOTE] The 3D Print Files are released under the terms granted by their author's licence and remains their original work.   Though I use it here, I claim no originality
+> [!NOTE] 
+The 3D Print Files are released under the terms granted by their author's licence and remains their original work.   Though I use it here, I claim no originality
 
 HC-SR04 Casing + Angle Adjustable Cradle
 https://www.thingiverse.com/thing:1799012
