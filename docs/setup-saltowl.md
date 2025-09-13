@@ -1,13 +1,12 @@
-![Logo](images/F498E0E6-CF5C-4971-8338-FA385F59BA8C.png "Logo")
-
-# ESP8266 Configuring and Setup
+# ESP8266: Configuring and Setup
 
 ### 1. Configure Base ESP Settings
-After installation with ESPHome Web, Salt Owl should be configured and displayed as below.   To setup / edit the code run by the ESP8266, click Edit
+After installation with ESPHome Web, Salt Owl should be configured and displayed as below.  
 
 ![SaltOwl Setup](../images/SA-Setup-1.png)
 
-Here you will see SaltOwl's initial code.  This will be simular to below, but key sections will need adding or modifying as below
+To setup / edit the code run by the ESP, click Edit
+Once clicked, you will see SaltOwl's initial or curernt code.  This will be simular to below, but key sections will need adding or modifying as discussed:
 
 ```yaml
 
@@ -48,32 +47,36 @@ captive_portal:
 
 With the base setup complete, add the the remainder of the script below the captive_portal: Line
 
-You will find full code in [text](../salt-owl.yaml)
+You will find full code in [../salt-owl.yaml](../salt-owl.yaml)
 
 ![SaltOwl Code ](../images/SA-Setup-2.png "SaltOwl Code")
 
 
-Once Copied, Edited & Pasted, Click Install to compile and if succsesful, upload the code to the ESP
+Once Copied, Edited & Pasted, Click Install to compile and if succsesful, upload the conpiled code to the ESP
 
 > [!Note]
 Once complete, the device will reboot and connect to your Wi-Fi network, and the logs will show relevant output.
 
 ![alt text](../images/SA-Setup-3.png)
 
-### 8. Add the Device to Home Assistant
+### 2. Add the Device to Home Assistant
    With your ESP device now on the network, go to your Home Assistant Dashboard.
 
 * Navigate to Settings > Devices \& Services
 * Under Discovered, you should see your new ESPHome device
 
-Click Configure and follow the prompts
+If SaltOwl does not appear there, you can manually install it.   In HomeAssistant, go to Settings -> Devicces /& Services -> ESPHome and Select Add Devuce
+
+![ESP Add Device](../images/SA-Setup-4.png)
+
+Here you will need to add the Host IP Address (as set in salt_owl.yaml) 
+
+![ESP Add Settings](../images/SA-Setup-5.png)
+
+and click Submit
 
 
-> [!Note]
-If you set an OTA password earlier, you'll be prompted to enter it here.
-
-
-### 9. Done! 🎉
+### 3. Done! 🎉
    Your ESP device is now fully integrated into Home Assistant. You can:
 
 * Monitor sensor readings
