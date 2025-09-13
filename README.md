@@ -80,23 +80,29 @@ You can build a simple Lovelace card (e.g. vertical stack, gauge, or entities) t
 type: vertical-stack
 cards:
   - type: gauge
-    entity: sensor.left_chamber_fill
+    entity: sensor.salt_owl_left_chamber_fill
     name: Left Tank
     min: 0
     max: 100
   - type: gauge
-    entity: sensor.right_chamber_fill
+    entity: sensor.salt_owl_right_chamber_fill
     name: Right Tank
     min: 0
     max: 100
   - type: entities
     entities:
-      - binary_sensor.left_chamber_fill_low
-      - binary_sensor.right_chamber_fill_low
-      - binary_sensor.average_fill_low
-      - number.tank_depth
-      - number.sensor_offset
-      - number.fill_alert_threshold
+      - binary_sensor.salt_owl_left_chamber_fill_low
+      - binary_sensor.salt_owl_right_chamber_fill_low
+      - binary_sensor.salt_owl_average_fill_low
+      - type: divider
+      - number.salt_owl_tank_depth_cm
+      - number.salt_owl_sensor_offset_cm
+      - number.salt_owl_fill_alert_threshold
+
+```
+
+
+![HA-Dashboard.png](images/HA-Dashboard.png)
 
 ## Change Log
 
