@@ -17,7 +17,7 @@ In addition to 3D Printing the STL files, you will also need:
  * 2 Back & 2 Front & 4 Ring
  * 2 Cradles
 
- [!Tip] Two different cradles are supplied.  The original (and thinner) is Cradle 1, the reworked (and slightly fatter) version is Cradle 2.    Printing these horiziontally make them extremely fragile and, frankly ineffective.   You are recommended top print these standing vertially and using support to ultimately ensure the best, most durable, build quality.
+ [!TIP] Two different cradles are supplied.  The original (and thinner) is Cradle 1, the reworked (and slightly fatter) version is Cradle 2.    Printing these horiziontally make them extremely fragile and, frankly ineffective.   You are recommended top print these standing vertially and using support to ultimately ensure the best, most durable, build quality.
  
 
 
@@ -49,7 +49,7 @@ If all goes well, this is the final build should look...
 ![Final Build](../images/Final-Build.png "Final Build")
 
 
-[!Note] The 3D Print Files are released under the terms granted by their author's licence and remains their original work.   Though I use it here, I claim no originality
+[!NOTE] The 3D Print Files are released under the terms granted by their author's licence and remains their original work.   Though I use it here, I claim no originality
 
 HC-SR04 Casing + Angle Adjustable Cradle
 https://www.thingiverse.com/thing:1799012
@@ -59,5 +59,5 @@ Remix HC-SR04 Casing Cradle
 https://www.thingiverse.com/thing:3498480
 by Crystallica is licensed under the Creative Commons - Attribution license.
 
-[!Important]
+[!IMPORTANT]
 While *all* included the 3D Print files are licenced under the Creative Commons - Attribution license, the code and other portions of SaltOwl is licenced under the Creative Commons Attribution-NonCommercial 4.0 International Licecne.   See https://creativecommons.org/licenses/by-nc/4.0/ for more detail.
