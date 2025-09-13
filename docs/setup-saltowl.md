@@ -2,29 +2,63 @@
 
 # ESP8266 Configuring and Setup
 
-### 6. Configure Wi-Fi and OTA
-   After installation, ESPHome Web will prompt you to enter your Wi-Fi credentials:
+### 1. Configure Base ESP Settings
+After installation with ESPHome Web, Salt Owl should be configured and displayed as below.   To setup / edit the code run by the ESP8266, click Edit
 
-* Wi-Fi SSID
-* Wi-Fi Password
+![SaltOwl Setup](../images/SA-Setup-1.png)
 
-(Optional) OTA password — used for secure over-the-air updates later
+Here you will see SaltOwl's initial code.  This will be simular to below, but key sections will need adding or modifying as below
 
-Click Next or Install once details are entered.
+```yaml
+
+sp8266:
+  board: esp01_1m
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: ""    # <- Add your Encryption Key here
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  manual_ip:                             # <- If you want a static IP, leave manual_ip 
+   static_ip: 192.168.11.166             #    (and amend value pairs below to 'fit' your netowrk) 
+   gateway: 192.168.11.1                 # Having a static IP is generally recommended!
+   subnet: 255.255.255.0
+
+ota:
+  - platform: esphome
+    password: ""                         # <- If you set a password during the setup process,
+                                         # it will be listed here
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Salt-Owl Fallback Hotspot"    #  <- If the ESP Device cannot connecto to the configured Wifi, 
+                                         #     you will be able to conenct to it via the Fallback Hotspot
+    password: "zWMStNT3PBAV"             #  <- With this password
+
+captive_portal:
 
 
-### 7. Install Your Configuration
-   Now you’ll upload the custom SaltOwl ESPHome configuration (YAML).
-   Remember to edit it and add your own Wifi Settings and IP Addresses in!
-   
-![SaltOwl Code ](../images/ESP-Home-15.png "SaltOwl Code")
+```
+
+With the base setup complete, add the the remainder of the script below the captive_portal: Line
+
+You will find full code in [text](../salt-owl.yaml)
+
+![SaltOwl Code ](../images/SA-Setup-2.png "SaltOwl Code")
 
 
-Click Install and wait for the flashing to complete.
+Once Copied, Edited & Pasted, Click Install to compile and if succsesful, upload the code to the ESP
 
 > [!Note]
-Once complete, the device will reboot and connect to your Wi-Fi network.
+Once complete, the device will reboot and connect to your Wi-Fi network, and the logs will show relevant output.
 
+![alt text](../images/SA-Setup-3.png)
 
 ### 8. Add the Device to Home Assistant
    With your ESP device now on the network, go to your Home Assistant Dashboard.

@@ -1,8 +1,14 @@
+<p align="center">
+
+  ![alt text](images/SaltOwl-Logo.png)
+
+</p>
+
 # Salt Owl
 
-**Salt Owl** is an ESPHome-based tool designed to accurately measure and report the fill levels of brine tanks in a water softener system. Using ultrasonic distance sensors, the system calculates the salt level in each chamber and reports it to Home Assistant, enabling automated alerts when the tanks are running low.
-
-This solution is ideal for anyone looking to monitor water softener salt levels remotely and avoid unexpected outages due to empty brine pans.
+ **Salt Owl** is an ESPHome-based tool designed to accurately measure and report the fill levels of brine tanks in a water softener system. Using ultrasonic distance sensors, the system calculates the salt level in each chamber and reports it to Home Assistant, enabling automated alerts when the tanks are running low.
+    
+ This solution is ideal for anyone looking to monitor water softener salt levels remotely and avoid unexpected outages due to empty brine pans.
 
 Features include:
 - Dual-chamber support (left/right tanks)
@@ -60,13 +66,13 @@ These values are updated hourly by default and reflect the current saltwater lev
 
 The following configuration parameters are exposed as number inputs:
 
-- **Sensor Offset (cm)**: Adjusts for sensor height above water line
+- **Sensor Offset (cm)**: Adjusts for sensor height above the top of the salt tank
 
-- **Tank Depth (cm)**: Total depth of the brine tank
+- **Tank Depth (cm)**: Total depth of the salt tank
 
 - **Fill Alert Threshold (%)**: Controls when “Low Fill” warnings are triggered
 
-These can be adjusted live via the Lovelace interface, and changes are applied immediately without reflashing the device.
+These can be adjusted live via the dashboard / interface, and changes are applied immediately without reflashing the device.
 
 ![HA-Controls.png](images/HA-Controls.png)
 
