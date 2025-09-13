@@ -1,8 +1,4 @@
-<p align="center">
-
-  ![alt text](images/SaltOwl-Logo.png)
-
-</p>
+![alt text](images/SaltOwl-Logo.png)
 
 # Salt Owl
 
