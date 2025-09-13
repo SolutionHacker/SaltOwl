@@ -17,7 +17,8 @@ In addition to 3D Printing the STL files, you will also need:
  * 2 Back & 2 Front & 4 Ring
  * 2 Cradles
 
- > [!TIP] Two different cradles are supplied.  The original (and thinner) is Cradle 1, the reworked (and slightly fatter) version is Cradle 2.    Printing these horiziontally make them extremely fragile and, frankly ineffective.   You are recommended top print these standing vertially and using support to ultimately ensure the best, most durable, build quality.
+ > [!TIP] 
+ Two different cradles are supplied.  The original (and thinner) is Cradle 1, the reworked (and slightly fatter) version is Cradle 2.    Printing these horiziontally make them extremely fragile and, frankly ineffective.   You are recommended top print these standing vertially and using support to ultimately ensure the best, most durable, build quality.
  
 
 
